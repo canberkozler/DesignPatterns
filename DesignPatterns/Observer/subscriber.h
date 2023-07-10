@@ -9,16 +9,15 @@ public:
     virtual ~ISubscriber() {}
     friend class Subject;
 protected:
-    virtual void Update(const std::string& message) const = 0;
+    virtual void update(const std::string& message) const = 0;
 };
 
 class Subscriber : public ISubscriber {
 public:
     Subscriber() : id { _unique_subscribers++ } {}
 
-
 protected:
-    void Update(const std::string& message) const override {
+    void update(const std::string& message) const override {
         std::cout << "SUBID: \"" << id << "\" recieved message -> " << message << '\n';
     };
 
