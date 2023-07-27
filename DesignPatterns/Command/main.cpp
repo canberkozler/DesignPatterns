@@ -8,7 +8,7 @@ std::mt19937& eng() {
 int main()
 {
     SwordsmanSpawner ss;
-    VikingsSpawner vs;
+    VikingSpawner vs;
     ArcherSpawner as;
 
     Army army;

@@ -148,9 +148,9 @@ public:
     std::shared_ptr<IArmedForce> spawnTroop() const override { return std::make_shared<Swordsman>(); }
 };
 
-class VikingsSpawner : public ITroopSpawner {
+class VikingSpawner : public ITroopSpawner {
 public:
-    std::shared_ptr<IArmedForce> spawnTroop() const override { return std::make_shared<Vikings>(); }
+    std::shared_ptr<IArmedForce> spawnTroop() const override { return std::make_shared<Viking>(); }
 };
 
 class ArcherSpawner : public ITroopSpawner {
