@@ -31,7 +31,7 @@ class Swordsman : public IArmedForce{
     }
 };
 
-class Vikings : public IArmedForce{
+class Viking : public IArmedForce{
     virtual void salute() const {
         std::cout << "Vikings: Auh Auh Auh!\n";
     }
