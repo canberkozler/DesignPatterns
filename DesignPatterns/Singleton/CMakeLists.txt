@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.8)
 
 # Kaynaðý bu projenin yürütülebilir dosyasýna ekleyin.
-add_executable (singleton main.cpp singleton.h tea.h)
+add_executable (singleton main.cpp templateSingleton.cpp)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET singleton PROPERTY CXX_STANDARD 20)
